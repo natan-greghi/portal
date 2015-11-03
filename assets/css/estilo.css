@@ -1,0 +1,384 @@
+.fundo{
+	position: absolute;
+	left: 0;
+	right: 0;
+	z-index: -1; 
+	background-image: url('../img/fundoverde.jpg');
+	background-position: 1600px;
+	background-attachment: fixed;
+	height: 340px;  
+}
+.topo{
+	color: #fff;
+	text-align: center;
+	position: relative;
+	height: 250px;
+	overflow: hidden;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: Pacific;
+}
+body{
+	position: relative;
+}
+.corpo{
+	margin-bottom: 30px;
+}
+
+.topo h1{
+	font-size: 5em;
+}
+
+.menu {
+	margin-bottom: 20px;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.menu div{
+	padding: 0;
+}
+
+#logo{
+	padding-top: 20px;
+	width: 250px;
+}
+
+#btnlogin{
+	margin: 0 auto;
+	float:right;
+}
+
+#busca{
+	display: inline-block;
+}
+
+.login input, button{
+	margin-bottom: 10px;
+}
+
+.login{
+	font-size: 0.8em;
+}
+
+.select{
+	height: 45px;
+}
+footer .row{
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.rodape{
+	position: relative;
+	width: 100%;
+	bottom: 0;
+	top: 55px;
+	padding-top: 0.5em;
+	font-family: Pacific;
+	text-align: center;
+	background-color: #FFF;
+}
+
+body{
+	background-color: #D4EDB6;
+	opacity: .9;
+}
+
+.vagas{
+	margin: 30px;
+	height: 100px;
+	border-radius: 10px;
+
+	-webkit-box-shadow: 8px 8px 15px 0 rgba(255,255,255,096) inset;
+	box-shadow: 8px 8px 15px 0 rgba(255,255,255,0.9) inset;
+	background: rgba(255,255,255,0.9);
+}
+.vaga-descri{
+	color: #000;
+	font-weight: 600;
+	margin-left: 110px;
+	display: inline-block;
+}
+
+.cad-aluno{
+	margin: 10px;
+	font-size: 0.8em;
+}
+
+.cad-aluno input, button{
+	margin-bottom: 10px !important;
+	display: inline !important;
+}
+
+
+
+.aprovar{
+	float: right;
+	font-weight: bold;
+	font-size: 1em;
+	line-height: 45px;
+	padding-right: 10px;
+	padding-left: 10px;
+	border-top-left-radius: none;
+	border-bottom-left-radius: none;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	-webkit-box-shadow: 2px 2px 5px 0 rgba(76,174,76,0.6) inset;
+	box-shadow: 2px 2px 5px 0 rgba(76,174,76,0.6) inset;
+	background: rgba(76,174,76,0.6);
+}
+
+.aprovar input{
+	margin-left: 20px;
+}
+
+.num-vagas{
+	float: right;
+	font-size: 1.8em;
+	line-height: 100px;
+	padding-right: 10px;
+	padding-left: 10px;
+	border-top-left-radius: none;
+	border-bottom-left-radius: none;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	-webkit-box-shadow: 2px 2px 5px 0 rgba(76,174,76,0.9) inset;
+	box-shadow: 2px 2px 5px 0 rgba(76,174,76,0.9) inset;
+	background: rgba(76,174,76,0.9);
+}
+
+.num-inscritos {
+	float: right;
+	font-size: 1.8em;
+	line-height: 100px;
+	padding-right: 10px;
+	padding-left: 10px;
+	border-top-left-radius: none;
+	border-bottom-left-radius: none;
+	border-top-right-radius: none;
+	border-bottom-right-radius: none;
+	-webkit-box-shadow: 2px 2px 5px 0 rgba(76,174,76,0.8) inset;
+	box-shadow: 2px 2px 5px 0 rgba(76,174,76,0.8) inset;
+	background: rgba(76,174,76,0.8);
+}
+
+.sigla{
+	line-height: 110px;
+	position: absolute;
+	height: 100px;
+	width: 100px;
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-top-right-radius: none;
+	border-bottom-right-radius: none;
+
+	-webkit-box-shadow: 2px 2px 5px 0 rgba(76,174,76,0.9) inset;
+	box-shadow: 2px 2px 5px 0 rgba(76,174,76,0.9) inset;
+	background: rgba(76,174,76,0.9);
+}
+
+.sigla-visualizar-vaga{
+	line-height: 110px;
+	position: absolute;
+	height: 100px;
+	width: 100px;
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+
+	-webkit-box-shadow: 2px 2px 5px 0 rgba(76,174,76,0.6) inset;
+	box-shadow: 2px 2px 5px 0 rgba(76,174,76,0.6) inset;
+	background: rgba(76,174,76,0.6);
+}
+
+body{
+	color: #000;
+}
+
+.ext-topo img{
+	height: 80px;
+	width: 120px;
+}
+
+.ext-topo spam{
+	color: #000;
+	font-size: 25px;
+}
+
+.ext-topo button{
+	margin-top: 20px;
+	float: right;
+}
+
+.ext-topo{
+	-webkit-box-shadow: 2px 2px 5px 0 rgba(76,174,76,0.6) inset;
+	box-shadow: 2px 2px 5px 0 rgba(76,174,76,0.6) inset;
+	background: rgba(76,174,76,0.9);
+	text-align: center;
+}
+
+.empresas{	
+	text-align: center;
+}
+
+.empresaBotao{
+	float: right;
+	width: 100px;
+}
+.empresaBotao button{
+	height: 51px;
+	margin: 0 !important;
+	border-radius: 0 !important;
+}
+
+.btnicon{
+	width: 15px;
+}
+
+
+.divisao{
+	height: 10px;
+	-moz-box-shadow:    inset 0 0 10px rgba(76,174,76,1);
+	-webkit-box-shadow: inset 0 0 10px rgba(76,174,76,1);
+	box-shadow:         inset 0 0 10px rgba(76,174,76,1);
+}
+
+.container-fluid .row{
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+.emp-aprovadas .row{
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.emp-nao-aprovadas .row{
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.cadastro-vagas .row{
+	margin-left: 0;
+	margin-right: 0;
+}
+
+
+.visualizar-vaga h1{
+	text-align: center;
+}
+
+.visualizar-vaga h4{
+	font-weight: bold;
+}
+.visualizar-vaga-corpo{
+
+	margin-top: 50px;
+}
+
+
+
+.inscritos{
+	margin-top: 25px;
+	height: 100px;
+	border-radius: 10px;
+
+	-webkit-box-shadow: 8px 8px 15px 0 rgba(255,255,255,0.6) inset;
+	box-shadow: 8px 8px 15px 0 rgba(255,255,255,0.6) inset;
+	background: rgba(255,255,255,0.6);
+
+}
+
+.inscritos-aprovar{
+	margin-right: -15px;
+	float: right;
+	font-size: 1em;
+	line-height: 40px;
+	padding-right: 5px;
+	padding-left: 5px;
+	border-top-left-radius: none;
+	border-bottom-left-radius: none;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	-webkit-box-shadow: 2px 2px 5px 0 rgba(76,174,76,0.6) inset;
+	box-shadow: 2px 2px 5px 0 rgba(76,174,76,0.6) inset;
+	background: rgba(76,174,76,0.6);
+}
+
+.big-checkbox{
+	height: 20px;
+	width: 20px;
+}
+
+.descricao-inscrito{
+	width: 700px;
+	margin-top: 5px;
+	height: 50px;
+}
+
+.descricao-inscrito spam{
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+
+.btn-enviar{
+	margin-top: 20px;
+}
+
+.neon-text {
+	color: rgb(64, 126, 10);
+	text-align: center;	
+	text-shadow: 1px 1px 0 rgb(7,90,2) , -1px -1px 0 rgb(7,90,2) , 1px -1px 0 rgb(7,90,2) , -1px 1px 0 rgb(7,90,2) ;
+}
+
+.inset-text-effect {
+	display: inline-block;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	border: none;
+	font: normal 30px/1 "Aladin", Helvetica, sans-serif;
+	color: rgba(48,48,48,1);
+	text-align: center;
+	text-transform: normal;
+	-o-text-overflow: clip;
+	text-overflow: clip;
+	white-space: pre;
+	text-shadow: 1px 1px 0 rgba(140,140,140,0.6) , -1px -1px 1px rgba(0,0,0,0.67) ;
+}
+
+
+.gradient-pattern {
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	width: 320px;
+	height: 320px;
+	border: none;
+	font: normal 100%/normal Arial, Helvetica, sans-serif;
+	color: rgb(255, 255, 255);
+	-o-text-overflow: clip;
+	text-overflow: clip;
+	background: -webkit-radial-gradient(closest-side, rgba(0,0,0,0) 98%, rgba(0,0,0,0.298039) 99%), -webkit-radial-gradient(closest-side, rgba(0,0,0,0) 98%, rgba(0,0,0,0.298039) 99%), rgba(196,255,173,1);
+	background: -moz-radial-gradient(closest-side, rgba(0,0,0,0) 98%, rgba(0,0,0,0.298039) 99%), -moz-radial-gradient(closest-side, rgba(0,0,0,0) 98%, rgba(0,0,0,0.298039) 99%), rgba(196,255,173,1);
+	background: radial-gradient(closest-side, rgba(0,0,0,0) 98%, rgba(0,0,0,0.298039) 99%), radial-gradient(closest-side, rgba(0,0,0,0) 98%, rgba(0,0,0,0.298039) 99%), rgba(196,255,173,1);
+	background-position: 0 0, 40px 40px;
+	-webkit-background-origin: padding-box;
+	background-origin: padding-box;
+	-webkit-background-clip: border-box;
+	background-clip: border-box;
+	-webkit-background-size: 80px 80px;
+	background-size: 80px 80px;
+}
