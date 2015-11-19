@@ -3,14 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Extensão Gerenciar Empresa</title>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo(CSS. 'bootstrap.css'); ?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo(CSS. 'estiolo.css') ?>">
 	<link async href="http://fonts.googleapis.com/css?family=Aladin" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
 	<link async href="http://fonts.googleapis.com/css?family=Antic" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
 	
-	<script src="js/jquery-2.1.4.min.js"></script>
-	<script src="js/bootstrap.js"></script>
-	<script src="js/menufixedtop.js"></script>	
+	<script src="<?php echo(JS. 'jquery-2.1.4.min.js'); ?>"></script>
+	<script src="<?php echo(JS. 'bootstrap.js'); ?>"></script>
+	<script src="<?php echo(JS. 'menifixedtop.js'); ?>"></script>
 </head>
 <body>
 	<div class="container-fluid">

@@ -1,4 +1,3 @@
-<?php include_once("topoADM.php"); ?>
 <div class="corpo">
 	<div class="row emp-nao-aprovadas">
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 empresas">
@@ -127,4 +126,3 @@
 	</div>
 </div>
 </div>
-<?php include_once("rodape.php"); ?>

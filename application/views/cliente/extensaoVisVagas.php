@@ -1,5 +1,3 @@
-<?php include_once("topoADM.php"); ?>
-
 <div class="corpo">
 	<div class="visualizar-vaga">
 		<div class="row">
@@ -170,4 +168,3 @@
 </div>
 </div>
 </div>
-<?php include_once("rodape.php"); ?>
