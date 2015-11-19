@@ -1,4 +1,4 @@
-<?php include_once("topo.php"); ?>
+
 <div class="row menu" >
 	<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xs-offset-2 col-sm-offset-2 col-md-offset-2 col-lg-offset-2">
 		<div class="btn-group  btn-group-justified" role="group" aria-label="...">
@@ -143,5 +143,3 @@
 		<!-- fim coluna vagas 2 -->
 	</div>
 </div>
-
-<?php include_once("rodape.php"); ?>

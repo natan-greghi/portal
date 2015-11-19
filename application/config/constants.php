@@ -85,7 +85,8 @@ define('EXIT_DATABASE', 8); // database error
 define('EXIT__AUTO_MIN', 9); // lowest automatically-assigned error code
 define('EXIT__AUTO_MAX', 125); // highest automatically-assigned error code
 
-define('CSS', '/projetowebconf/assets/css/');
-define('JS', '/projetowebconf/assets/js/');
-define('FONT', '/projetowebconf/assets/fonts/');
-define('IMG', '/projetowebconf/assets/img/');
+
+define('CSS', '/portal/assets/css/');
+define('JS', '/portal/assets/js/');
+define('FONT', '/portal/assets/fonts/');
+define('IMG', '/portal/assets/img/');
