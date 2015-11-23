@@ -355,7 +355,7 @@ $config['encryption_key'] = '$#12foos2#%@';
 | except for 'cookie_prefix' and 'cookie_httponly', which are ignored here.
 |
 */
-$config['sess_driver'] = 'database';
+//$config['sess_driver'] = 'database';
 $config['sess_cookie_name'] = 'ci_session';
 $config['sess_expiration'] = 60*60*24;
 $config['sess_save_path'] = 'ci_sessions';
