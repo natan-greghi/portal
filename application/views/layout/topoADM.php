@@ -4,19 +4,19 @@
 	<meta charset="UTF-8">
 	<title>Extensão Gerenciar Empresa</title>
 	<link rel="stylesheet" type="text/css" href="<?php echo(CSS. 'bootstrap.css'); ?>">
-	<link rel="stylesheet" type="text/css" href="<?php echo(CSS. 'estiolo.css') ?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo(CSS. 'estilo.css') ?>">
 	<link async href="http://fonts.googleapis.com/css?family=Aladin" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
 	<link async href="http://fonts.googleapis.com/css?family=Antic" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
 	
 	<script src="<?php echo(JS. 'jquery-2.1.4.min.js'); ?>"></script>
 	<script src="<?php echo(JS. 'bootstrap.js'); ?>"></script>
-	<script src="<?php echo(JS. 'menifixedtop.js'); ?>"></script>
+	<script src="<?php echo(JS. 'menufixedtop.js'); ?>"></script>
 </head>
 <body>
 	<div class="container-fluid">
 		<div class="row ext-topo">
 			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-				<img src="img/logoIFSP.png">
+				<img src="<?php echo IMG. 'logoIFSP.png'  ?>">
 				<spam>Portal de Estágio IFSP</spam>
 			</div>
 			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
