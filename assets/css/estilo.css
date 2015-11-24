@@ -100,6 +100,10 @@ body{
 	font-weight: 600;
 	margin-left: 110px;
 	display: inline-block;
+	margin-right: 20px;
+}
+.vaga-descri h3{
+	margin-top: 10px;
 }
 
 .cad-aluno{
@@ -147,6 +151,9 @@ body{
 	-webkit-box-shadow: 2px 2px 5px 0 rgba(76,174,76,0.9) inset;
 	box-shadow: 2px 2px 5px 0 rgba(76,174,76,0.9) inset;
 	background: rgba(76,174,76,0.9);
+	position: absolute;
+	margin-left: -20px;
+
 }
 
 .num-inscritos {
