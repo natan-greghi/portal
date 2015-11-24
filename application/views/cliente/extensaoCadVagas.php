@@ -65,11 +65,11 @@
 					<label for="textareaDescricao" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 control-label">Remuneração</label>
 					<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">	
 						<label class="radio-inline col-xs-3 col-sm-3 col-md-3 col-lg-3">
-							<input type="radio" name="remunerado" id="inlineRadio1" value="1"> Remunerado
-							<input type="number" min="1" name="valorRemunerado" id="inputValor" class=" form-control" placeholder="0,00" value="" required="required" pattern="" title="">
+							<input type="radio" name="remunerado" id="remunerado" value="1" onchange="esconderValor();"> Remunerado
+							<input type="number" min="1" name="valorRemunerado" id="valorRemunerado" class=" form-control" placeholder="0,00" value="" required="required" pattern="" title="" disabled>
 						</label>
 						<label class="radio-inline">
-							<input type="radio" name="remunerado" id="inlineRadio2" value="2" checked> Não Remunerado
+							<input type="radio" name="remunerado" id="inlineRadio2" onchange="esconderValor();" value="0" checked> Não Remunerado
 						</label>							
 					</div>
 				</div>

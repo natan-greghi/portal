@@ -18,23 +18,35 @@ class Cadvaga_model extends CI_Model
 		return $query->result();
 	}
 
-	public function inserirVaga($vaga,$cursos){
-		var_dump($cursos);
-
+	public function inserirVaga($vaga,$cursos,$beneficios){
+		//inserindo vaga
 		$this->db->insert('vagas',$vaga);
 		$vagaId = $this->db->insert_id();
 
-		$dados = array();
+		//inserindo cursos
+		$dadosCurso = array();
 		foreach ($cursos as $curso) {
-			$dados1 = array(
-				'cursos_id' => $curso,
-				'vagas_id' => $vagaId
+			$dados = array(
+				'vagas_id' => $vagaId,
+				'cursos_id' => $curso
+				
 				);
-			array_push($dados, $dados1);
+			array_push($dadosCurso, $dados);
 		}
 
-		$this->db->insert_batch('cursos_vagas',$dados);
+		$this->db->insert_batch('cursos_vagas',$dadosCurso);
 
+		//Inserindo beneficios
+		$dadosBeneficio = array();
+		foreach ($beneficios as $beneficio) {
+			$dados1 = array(
+				'vagas_id' => $vagaId,
+				'beneficios_id' => $beneficio
+				);
+			array_push($dadosBeneficio, $dados1);
+		}
+
+		$this->db->insert_batch('vagas_beneficios',$dadosBeneficio);
 	}
 
 

@@ -42,10 +42,10 @@ class Cadvaga extends CI_Controller
 				'outros_beneficios' => $this->input->post('outros'),
 				'empresas_id' => $this->input->post('empresa')
 				);
-
+			$beneficios = $this->input->post('beneficios[]');
 			$cursos = $this->input->post('cursos[]');
 
-			$this->cadvaga_model->inserirVaga($dados,$cursos);
+			$this->cadvaga_model->inserirVaga($dados,$cursos,$beneficios);
 			$this->load->view('cliente/extensaoVagas');
 		}
 	}
