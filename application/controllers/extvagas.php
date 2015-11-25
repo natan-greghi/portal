@@ -11,8 +11,11 @@ class Extvagas extends CI_Controller
 
 	public function index() { 
 		$dados = array(
-			'vagasNaoAprovadas' => $this->extvaga_model->consultaVagasNaoAprovadas()
+			'vagasNaoAprovadas' => $this->extvaga_model->consultaVagasNaoAprovadas(),
+			'vagasAprovadas' => $this->extvaga_model->consultaVagasAprovadas()
 			);
+
+		//var_dump($dados['vagasAprovadas']);
 
 		$this->load->view('layout/topoADM');
 		$this->load->view('cliente/extensaoVagas', $dados);
@@ -24,7 +27,12 @@ class Extvagas extends CI_Controller
 		$this->extvaga_model->aprovarVaga($idVaga);
 
 		redirect('extvagas','refresh');
-		//$this->index();
+	}
+
+	public function excluirVaga($idVaga){
+		$this->extvaga_model->excluirVaga($idVaga);
+
+		redirect('extvagas','refresh');
 	}
 }
 ?>

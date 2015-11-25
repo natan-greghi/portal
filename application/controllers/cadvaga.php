@@ -46,7 +46,7 @@ class Cadvaga extends CI_Controller
 			$cursos = $this->input->post('cursos[]');
 
 			$this->cadvaga_model->inserirVaga($dados,$cursos,$beneficios);
-			$this->load->view('cliente/extensaoVagas');
+			redirect('cadvaga','refresh');
 		}
 	}
 

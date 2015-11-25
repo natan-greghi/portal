@@ -78,7 +78,6 @@
 					<label for="empresa" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 control-label">Empresa</label>
 					<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
 						<select name="empresa" id="inputEmpresa" class="form-control" required="required">
-							<option>Selecione uma empresa</option>
 							<?php foreach ($empresas as $empresa) :?>
 								<option value="<?php echo $empresa->id; ?>"><?php echo $empresa->nome_fantasia;?></option>
 							<?php endforeach; ?>
