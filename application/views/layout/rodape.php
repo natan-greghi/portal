@@ -37,14 +37,4 @@
 		}
 	});
 </script>
-
-<script type="text/javascript">
-	function esconderValor(){
-		if(document.getElementById('remunerado').checked){
-			document.getElementById('valorRemunerado').disabled = false;
-		}else{
-			document.getElementById('valorRemunerado').disabled = true;
-		}
-	}
-</script>
 </html>
