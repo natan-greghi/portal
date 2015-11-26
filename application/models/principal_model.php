@@ -9,20 +9,23 @@ class Principal_model extends CI_Model{
 
 
  public function consultaTodasVagas(){
- 	$this->db->select('v.id, titulo, numero_vagas, c.sigla AS "Sigla_Curso", ci.nome, u.sigla');
+
+ 	$this->db->select('v.id, titulo, v.numero_vagas, group_concat(c.sigla) AS "Sigla_Curso", ci.nome, u.sigla');
  	$this->db->from("vagas v");
  	$this->db->join('cursos_vagas cv', 'v.id = cv.vagas_id');
  	$this->db->join('cursos c', 'c.id = cv.cursos_id');
  	$this->db->join('empresas e', 'e.id = v.empresas_id');
  	$this->db->join('cidade ci', 'ci.id = e.cidade_id');
  	$this->db->join('uf u', 'u.id = ci.uf_id');
+ 	$this->db->group_by('v.id');
+ 	$this->db->limit(8);
  	$query = $this->db->get();
  	return $query->result_array();
  }
  public function consultaForm($dados){
  	if($dados['curso'] != 0 && $dados['pesq'] != null)
  	{
- 		$this->db->select('v.id, titulo, numero_vagas, c.sigla AS "Sigla_Curso", ci.nome, u.sigla');
+ 		$this->db->select('v.id, titulo, v.numero_vagas, group_concat(c.sigla) AS "Sigla_Curso", ci.nome, u.sigla');
  		$this->db->from("vagas v");
  		$this->db->join('cursos_vagas cv', 'v.id = cv.vagas_id');
  		$this->db->join('cursos c', 'c.id = cv.cursos_id');
@@ -31,13 +34,15 @@ class Principal_model extends CI_Model{
  		$this->db->join('uf u', 'u.id = ci.uf_id');
  		$this->db->where('c.id =', $dados['curso']);
  		$this->db->like('titulo', $dados['pesq']);
+ 		$this->db->group_by('v.id');
  		$this->db->order_by('titulo','asc');
+ 		$this->db->limit(8);
  		$query = $this->db->get();
  		return $query->result_array();
  	}
  	else if($dados['curso'] == 0 && $dados['pesq'] != null)
  	{
- 		$this->db->select('v.id, titulo, numero_vagas, c.sigla AS "Sigla_Curso", ci.nome, u.sigla');
+ 		$this->db->select('v.id, titulo, v.numero_vagas,group_concat(c.sigla) AS "Sigla_Curso", ci.nome, u.sigla');
  		$this->db->from("vagas v");
  		$this->db->join('cursos_vagas cv', 'v.id = cv.vagas_id');
  		$this->db->join('cursos c', 'c.id = cv.cursos_id');
@@ -45,13 +50,15 @@ class Principal_model extends CI_Model{
  		$this->db->join('cidade ci', 'ci.id = e.cidade_id');
  		$this->db->join('uf u', 'u.id = ci.uf_id');
  		$this->db->like('titulo', $dados['pesq']);
+ 		$this->db->group_by('v.id');
  		$this->db->order_by('titulo','asc');
+ 		$this->db->limit(8);
  		$query = $this->db->get();
  		return $query->result_array();
  	}
  	else if($dados['curso'] != 0 && $dados['pesq'] == null){
  		
- 		$this->db->select('v.id, titulo, numero_vagas, c.sigla AS "Sigla_Curso", ci.nome, u.sigla');
+ 		$this->db->select('v.id, titulo, v.numero_vagas, group_concat(c.sigla) AS "Sigla_Curso", ci.nome, u.sigla');
  		$this->db->from("vagas v");
  		$this->db->join('cursos_vagas cv', 'v.id = cv.vagas_id');
  		$this->db->join('cursos c', 'c.id = cv.cursos_id');
@@ -59,7 +66,24 @@ class Principal_model extends CI_Model{
  		$this->db->join('cidade ci', 'ci.id = e.cidade_id');
  		$this->db->join('uf u', 'u.id = ci.uf_id');
  		$this->db->where('c.id =', $dados['curso']);
+ 		$this->db->group_by('v.id');
  		$this->db->order_by('titulo','asc');
+ 		$this->db->limit(8);
+ 		$query = $this->db->get();
+ 		return $query->result_array();
+ 	}
+ 	else
+ 	{
+
+ 		$this->db->select('v.id, titulo, v.numero_vagas, group_concat(c.sigla) AS "Sigla_Curso", ci.nome, u.sigla');
+ 		$this->db->from("vagas v");
+ 		$this->db->join('cursos_vagas cv', 'v.id = cv.vagas_id');
+ 		$this->db->join('cursos c', 'c.id = cv.cursos_id');
+ 		$this->db->join('empresas e', 'e.id = v.empresas_id');
+ 		$this->db->join('cidade ci', 'ci.id = e.cidade_id');
+ 		$this->db->join('uf u', 'u.id = ci.uf_id');
+ 		$this->db->group_by('v.id');
+ 		$this->db->limit(8);
  		$query = $this->db->get();
  		return $query->result_array();
  	}

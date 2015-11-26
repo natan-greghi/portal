@@ -101,6 +101,8 @@ body{
 	margin-left: 110px;
 	display: inline-block;
 	margin-right: 20px;
+	position: absolute;
+	padding-right: 20px!important;
 }
 .vaga-descri h3{
 	margin-top: 10px;
@@ -151,7 +153,6 @@ body{
 	-webkit-box-shadow: 2px 2px 5px 0 rgba(76,174,76,0.9) inset;
 	box-shadow: 2px 2px 5px 0 rgba(76,174,76,0.9) inset;
 	background: rgba(76,174,76,0.9);
-	position: absolute;
 	margin-left: -20px;
 
 }
@@ -356,7 +357,7 @@ body{
 	-moz-box-sizing: content-box;
 	box-sizing: content-box;
 	border: none;
-	font: normal 30px/1 "Aladin", Helvetica, sans-serif;
+	font: normal 24px/1 "Aladin", Helvetica, sans-serif;
 	color: rgba(48,48,48,1);
 	text-align: center;
 	text-transform: normal;

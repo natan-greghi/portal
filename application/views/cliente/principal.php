@@ -32,8 +32,8 @@
 				<option value="0">Todos</option>
 				<option value="1">TADS</option>
 				<option value="2">INFO</option>
-				<option value="3">MATE</option>
-				<option value="4">EDIF</option>
+				<option value="3">EDIF</option>
+				<option value="4">MAT</option>
 				<option value="5">EVEN</option>
 			</select>
 		</div>
@@ -51,24 +51,43 @@
 </div>
 <div class="row vagas-container corpo">
 	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-		<?php foreach ($vagas as $vaga) { ?>
-		<div class="vagas">
-			<div class="sigla">
-				<span class="inset-text-effect"><?php echo $vaga['Sigla_Curso'] ?></span>
-			</div>
+		<?php
+		$i = 0;
+		foreach ($vagas as $vaga) {
+			if(($i % 2) == 0){?>
+			<div class="vagas">
+				<div class="sigla">
+					<span class="inset-text-effect"><?php echo $vaga['Sigla_Curso'] ?></span>
+				</div>
 
-			<div class="vaga-descri">
-				<h3><?php echo $vaga['titulo'] ?></h3>
-				<spam><?php echo $vaga['nome'] ?> - <?php echo $vaga['sigla'] ?></spam>
+				<div class="vaga-descri">
+					<h3><?php echo $vaga['titulo'] ?></h3>
+					<spam><?php echo $vaga['nome'] ?> - <?php echo $vaga['sigla'] ?></spam>
+				</div>
+				<spam class="num-vagas"><?php echo $vaga['numero_vagas']; ?></spam>
 			</div>
-			<spam class="num-vagas">2</spam>
+			<?php }$i++;} ?>
 		</div>
-		<?php } ?>
-	</div>
-	<!-- fim coluna vagas 1 -->
-	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+		<!-- fim coluna vagas 1 -->
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+			<?php
+			$i = 0;
+			foreach ($vagas as $vaga) {
+				if(($i % 2) != 0){?>
+				<div class="vagas">
+					<div class="sigla">
+						<span class="inset-text-effect"><?php echo $vaga['Sigla_Curso'] ?></span>
+					</div>
 
+					<div class="vaga-descri">
+						<h3><?php echo $vaga['titulo'] ?></h3>
+						<spam><?php echo $vaga['nome'] ?> - <?php echo $vaga['sigla'] ?></spam>
+					</div>
+					<spam class="num-vagas"><?php echo $vaga['numero_vagas']; ?></spam>
+				</div>
+				<?php }$i++;}?>
+
+			</div>
+			<!-- fim coluna vagas 2 -->
+		</div>
 	</div>
-	<!-- fim coluna vagas 2 -->
-</div>
-</div>
